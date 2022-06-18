@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  align-items: center;
+  background-color: black;
+}
+
+main {
+  margin: 10% 18% 50%;
+  display: grid;
+  grid-template-areas:
+    "myarea1 myarea1 myarea2"
+    "myarea3 myarea4 myarea4"
+    "myarea3 myarea5 myarea5";
+  gap: 10px;
+}
+
+main div {
+  padding: 13%;
+  text-align: center;
+}
+
+.item1 {
+  background-color: orangered;
+  grid-area: myarea1;
+}
+
+.item2 {
+  background-color: orange;
+  grid-area: myarea2;
+}
+
+.item3 {
+  background-color: rgb(25, 89, 25);
+  grid-area: myarea3;
+}
+
+.item4 {
+  background-color: blue;
+  grid-area: myarea4;
+}
+
+.item5 {
+  background-color: blue;
+  grid-area: myarea5;
+}
